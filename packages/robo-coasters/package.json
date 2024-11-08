@@ -1,0 +1,29 @@
+{
+  "name": "robo-coasters",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "all": "npm run lint && npm test && npm run test:mutation",
+    "lint": "npm run lint:ts && npm run lint:format",
+    "lint:ts": "tsc -b jsconfig.json",
+    "lint:format": "prettier --write --check --ignore-path .gitignore .",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:mutation": "stryker run",
+    "start": "lite-server"
+  },
+  "devDependencies": {
+    "@jest/globals": "catalog:",
+    "@stryker-mutator/api": "catalog:",
+    "@stryker-mutator/core": "catalog:",
+    "@stryker-mutator/jest-runner": "catalog:",
+    "jest": "catalog:",
+    "jest-environment-jsdom": "catalog:",
+    "jest-mock": "catalog:",
+    "lite-server": "catalog:",
+    "prettier": "catalog:",
+    "typescript": "catalog:",
+    "whatwg-fetch": "catalog:"
+  },
+  "packageManager": "pnpm@9.12.1+sha512.e5a7e52a4183a02d5931057f7a0dbff9d5e9ce3161e33fa68ae392125b79282a8a8a470a51dfc8a0ed86221442eb2fb57019b0990ed24fab519bf0e1bc5ccfc4"
+}

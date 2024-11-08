@@ -1,0 +1,21 @@
+{
+  "name": "@kcws/mutation-test-simple",
+  "type": "module",
+  "author": {
+    "name": "Kamontat Chantrachirathumrong",
+    "email": "hello@kamontat.net",
+    "url": "https://kamontat.net"
+  },
+  "scripts": {
+    "test": "NODE_OPTIONS='--experimental-vm-modules' jest",
+    "test:mutation": "stryker run"
+  },
+  "devDependencies": {
+    "@jest/globals": "catalog:",
+    "@stryker-mutator/api": "catalog:",
+    "@stryker-mutator/core": "catalog:",
+    "@stryker-mutator/jest-runner": "catalog:",
+    "jest": "catalog:"
+  },
+  "packageManager": "pnpm@9.12.1"
+}
